@@ -18,15 +18,9 @@ import sys
 if __name__ == '__main__':
     N = int(input())
 if (N>=1 and N<=100):  # !!!!!! LOGICAL AND is and, not & or &&
-    if(N%2 != 0):
+    if(N%2 != 0 or (N in range(6,21))):
         print("Weird")
     else:
-        if(N>=2 and N<=5):
-            print("Not Weird")
-        elif(N>=6 and N<=20):
-            print("Weird")
-        else:
-            
-            print("Not Weird")
+        print("Not Weird")
 else:
     exit()
